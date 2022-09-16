@@ -74,7 +74,8 @@ body{
 .account{
     width: 100%;
     height: 8%;
-    background-color: hsl(0deg 0% 92%)
+    background-color: hsl(0deg 0% 92%);
+    border: 1px solid hsl(0deg 0% 92%);
 }
 
 .notifiche{
@@ -98,6 +99,14 @@ body{
 
 
 
+/* ----Persone----- */
+.persona{
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 255, 55, 0.308);
+}
+
+
 
 /* -----------Colonna Destra----------------- */
 .colonna-Dx{
@@ -112,11 +121,12 @@ body{
     width: 100%;
     height: 8%;
     background-color: hsl(0deg 0% 92%);
+    border: 1px solid hsl(0deg 0% 92%);
 }
 
 .chat{
-    background-image: url(img/wth.PNG);
-    background-size: cover;
+    background-image: url(img/mine.jpg);
+    
     width: 100%;
     height: 83%;
 }
