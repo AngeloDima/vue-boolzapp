@@ -66,38 +66,32 @@ body{
     background-color: red;
 }
 
+/* -----Sotto categorie--------- */
 
 .account{
     width: 100%;
-    height: 60px;
-    background-color: aliceblue;
+    height: 8%;
+    background-color: hsl(0deg 0% 92%)
 }
 
 .notifiche{
     width: 100%;
-    height: 70px;
-    background-color: antiquewhite;
+    height: 10%;
+    background-color: hsl(199deg 95% 77%);
 }
 
 
 .barra-search > input{
     width: 100%;
-    height: 35px;
+    height: 40px;
+    /* background-color: hsl(0deg 0% 100%); */
 }
 
 .contatti{
     width: 100%;
-    height: 79%;
-    background-color: rgb(255, 0, 179);
+    height: 77%;
+    background-color: rgb(207, 207, 207);
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -106,4 +100,18 @@ body{
 .colonna-Dx{
     flex-grow: 1;
     background-color: aqua;
+}
+
+
+/* -----Sotto categorie--------- */
+
+.profiloContatto{
+    width: 100%;
+    height: 8%;
+    background-color: red;
+}
+
+.chat{
+    background-image: url(img/wth.PNG);
+    background-size: cover;
 }
