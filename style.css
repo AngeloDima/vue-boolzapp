@@ -4,3 +4,41 @@
     margin: 0;
     flex-shrink: 0;
 }
+
+
+
+
+/* utility */
+
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+
+
+
+
+
+/* -------------------- */
+.containerGrosso{
+    /* background-color: red; */
+    width: 100%;
+    height: 100vh;
+}
+
+.parte-sopra{
+    background-color: hsl(174deg 100% 29%);
+    width: 100%;
+    height: 15vh;
+}
+
+
+.parte-sotto{
+    background-color: hsl(53deg 11% 85%);
+    width: 100%;
+    height: 85vh;
+}
