@@ -100,11 +100,13 @@ body{
 
 
 /* ----Persone----- */
-.persona{
-    width: 100%;
-    height: 10%;
-    background-color: rgba(0, 255, 55, 0.308);
-}
+.avatar-icon{
+    width: 50px;
+    height:50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
 
 
 
@@ -136,3 +138,4 @@ body{
     height: 9%;
     background-color: hsl(0deg 0% 92%);
 }
+
