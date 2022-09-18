@@ -1,14 +1,14 @@
  console.log("JS OK!");
 
- console.log(contacts);
+ console.log(`okay`, contacts);
 
- const app = new Vue({
-     el: '#app',
-     data: {
-         
-         contacts,
-     }
-   })
-
+const app = new Vue(
+    {
+        ell :`#app`,
+        data : {
+            contacts,
+        },
+    }
+); 
 
 

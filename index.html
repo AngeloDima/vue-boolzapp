@@ -4,43 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.2/vue.min.js" integrity="sha512-L3RMF4eoFlxobBz3eDQ01XuDSNJfcxPLC+VEsxDS0b0rgn2zVKDtx8P/+ARrJIpRDSnYrbUFjDKoFepXE/pj+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="data.js" defer></script>
-    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     
     <title>BoolZap</title>
 </head>
 <body>
-    <div id="app" class="containerGrosso flex flex-column">
-        <div class="parte-sopra"></div>
-        <div class="parte-sotto"></div>
-        <div class="container-web flex">
-
-            <!-- ----------------Colonna Sinistra------------- -->
-
-            <div class="colonna-Sx flex flex-column">
-
-                <div class="account"></div>
-                <div class="notifiche"></div>
-
-                <div class="barra-search">
-                    <input type="text" name="" id="">
+    <div id="app">
+        <div class="containerGrosso flex flex-column">
+            <div class="parte-sopra"></div>
+            <div class="parte-sotto"></div>
+            <div class="container-web flex">
+    
+                <!-- ----------------Colonna Sinistra------------- -->
+    
+                <div class="colonna-Sx flex flex-column">
+    
+                    <div class="account"></div>
+                    <div class="notifiche"></div>
+    
+                    <div class="barra-search">
+                        <input type="text" name="" id="">
+                    </div>
+    
+                    <div class="contatti">
+                        <div v-for="Contatto in contacts" class="singolo-contatto active" >
+                            <div class="avatar-info flex">
+                                <img :src="`img/avatar` + contacts.avatar + `.jpg`" alt="">
+                                <div class="avatar-scritte">
+                                    <h3>{{contacts.name}}</h3> 
+                                    <p>{{contacts.messages}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
-
-                <div class="contatti">
-                    
+    
+                <!-- ----------------Colonna Destra------------- -->
+    
+                <div class="colonna-Dx">
+                    <div class="profiloContatto"></div>
+                    <div class="chat"></div>
+                    <div class="scrittore"></div>
                 </div>
-            </div>
-
-            <!-- ----------------Colonna Destra------------- -->
-
-            <div class="colonna-Dx">
-                <div class="profiloContatto"></div>
-                <div class="chat"></div>
-                <div class="scrittore"></div>
             </div>
         </div>
     </div>
+    
 </body>
+<script src="data.js" ></script>
+<script src="script.js" ></script>
 </html>

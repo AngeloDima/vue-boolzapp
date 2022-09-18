@@ -98,6 +98,22 @@ body{
 }
 
 
+.singolo-contatto.active{
+    background-color: bisque;
+}
+
+
+
+.avatar-info{
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar-info img{
+    height: 50px;
+}
+
+
 
 /* ----Persone----- */
 .avatar-icon{
