@@ -30,12 +30,12 @@
                     </div>
     
                     <div class="contatti">
-                        <div v-for="Contatto in contacts" class="singolo-contatto active" >
+                        <div v-for="contatto in contacts" class="singolo-contatto active" >
                             <div class="avatar-info flex">
-                                <img :src="`img/avatar` + contacts.avatar + `.jpg`" alt="">
+                                <img :src="`img/avatar` + contatto.avatar + `.jpg`" alt="">
                                 <div class="avatar-scritte">
-                                    <h3>{{contacts.name}}</h3> 
-                                    <p>{{contacts.messages}}</p>
+                                    <h3>{{contatto.name}}</h3> 
+                                    <p>{{contatto.messages[0]}}</p> 
                                 </div>
                             </div>
                         </div>

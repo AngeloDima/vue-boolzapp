@@ -4,9 +4,9 @@
 
 const app = new Vue(
     {
-        ell :`#app`,
+        el :"#app",
         data : {
-            contacts,
+            contacts
         },
     }
 ); 
