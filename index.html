@@ -35,7 +35,10 @@
                                 <img :src="`img/avatar` + contatto.avatar + `.jpg`" alt="">
                                 <div class="avatar-scritte">
                                     <h3>{{contatto.name}}</h3> 
-                                    <p>{{contatto.messages[0]}}</p> 
+                                    <p>{{contatto.messages[0].message}}</p> 
+                                </div>
+                                <div class="orario">
+                                    <p>{{contatto.messages[0].date}}</p>
                                 </div>
                             </div>
                         </div>
